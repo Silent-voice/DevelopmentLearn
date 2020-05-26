@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!-- 根标签 -->
+<configuration>
+
+    <!-- 设置全局属性，之后property就可以直接引用 -->
+    <properties>
+        <property name="driver" value="com.mysql.cj.jdbc.Driver"/>   <!-- 数据库驱动-->
+        <property name="url" value="jdbc:mysql://127.0.0.1:3306/ssmdemo?serverTimezone=UTC"/>
+        <property name="username" value="root"/>
+        <property name="password" value="14061216"/>
+    </properties>
+
+    <!-- 环境，可以配置多个，default：指定采用哪个环境 -->
+    <environments default="test">
+        <!-- id：唯一标识 -->
+        <environment id="test">
+            <!-- 事务管理器，JDBC类型的事务管理器 -->
+            <transactionManager type="JDBC" />
+            <!-- 数据源，池类型的数据源  UNPOOLED：不使用连接池的数据源 POOLED：使用连接池的数据源  JNDI: 容器中使用，可以集中或在外部配置数据源-->
+            <dataSource type="POOLED">
+                <property name="driver" value="${driver}" />
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}" />
+                <property name="password" value="${password}" />
+            </dataSource>
+        </environment>
+
+    </environments>
+
+
+    <!-- 如果在applicationContext.xml里面已经设置了mappers路径，这里就不能设置了，否则报已映射错误-->
+    <!-- 设置映射路径-->
+    <mappers>
+        <mapper resource="mappers/MyMapper.xml" />
+        <mapper resource="mappers/UserDaoMapper.xml" />
+        <mapper resource="mappers/UserMapper.xml" />
+
+    </mappers>
+
+
+</configuration>

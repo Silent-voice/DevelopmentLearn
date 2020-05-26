@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="471b8a46-6c4f-4ee2-98c6-a3e97c978a89" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1aOmbzTnuZbxZh5GsiKTfaAiNjd" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Code\Java_learning\SQL_learn\src\main\java" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="471b8a46-6c4f-4ee2-98c6-a3e97c978a89" name="Default Changelist" comment="" />
+      <created>1586615089372</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586615089372</updated>
+      <workItem from="1586615091639" duration="4020000" />
+      <workItem from="1586679138163" duration="1278000" />
+      <workItem from="1586682226802" duration="10871000" />
+      <workItem from="1586770934467" duration="4741000" />
+      <workItem from="1586788166021" duration="974000" />
+      <workItem from="1586951925809" duration="684000" />
+      <workItem from="1587708505312" duration="2157000" />
+      <workItem from="1587717170850" duration="1278000" />
+      <workItem from="1587721497362" duration="52000" />
+      <workItem from="1587721982742" duration="14000" />
+      <workItem from="1587726361363" duration="176000" />
+      <workItem from="1587728137853" duration="118000" />
+      <workItem from="1588690965489" duration="1451000" />
+      <workItem from="1588748581732" duration="1547000" />
+      <workItem from="1588767451657" duration="63000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="181" width="1034" height="677" key="#Project_Structure" timestamp="1586615591875">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="181" width="1034" height="677" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1586615591875" />
+    <state x="892" y="163" key="Maven.ArtifactSearchDialog" timestamp="1586615135911">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="892" y="163" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586615135911" />
+    <state x="652" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1588748578558">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="652" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588748578558" />
+    <state x="334" y="161" key="new project wizard" timestamp="1588749262211">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="334" y="161" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1588749262211" />
+  </component>
+</project>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- 一个Maven项目由  groupId artifactId version 三者唯一确定， 依赖的第三方库也是-->
+    <groupId>org.example</groupId>      <!-- 包名 -->
+    <artifactId>WebLearn</artifactId>   <!-- 类名 -->
+    <version>1.0-SNAPSHOT</version>     <!-- 项目版本 -->
+    <packaging>war</packaging>          <!-- 打包类型 Java Web Application Archive -->
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <java.version>11</java.version>
+        <tomcat.version>9.0.33</tomcat.version>     <!-- 加入tomcat -->
+    </properties>
+
+    <!-- 依赖库
+        1. 由 groupId artifactId version 三者唯一确定
+        2. scope 字段定义项目与依赖库之间的关系
+            compile	    编译时需要用到该jar包（默认）
+            test	    编译Test时需要用到该jar包
+            runtime	    编译时不需要，但运行时需要用到
+            provided    编译时需要用到，但运行时由JDK或某个服务器提供
+        3. 加载依赖库时，依赖库所需的其他依赖库也会自动加载
+    -->
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-core</artifactId>
+            <version>${tomcat.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-jasper</artifactId>
+            <version>${tomcat.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>4.0.0</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+
+</project>

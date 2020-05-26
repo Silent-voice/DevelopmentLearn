@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<!-- namespace：命名空间，用于绑定dao接口 -->
+<mapper namespace="com.example.db_learn.mybatis.dao.MybatisUserDao">
+
+    <!-- 简单的查询映射，这里resultType使用了预先定义的别名，也可以使用类的完整路径com.example.db_learn.mybatis.pojo.MybatisUser-->
+    <select id="getUser" parameterType="long" resultType="user">
+        select id, user_name as userName, sex, note from t_user where id = #{id}
+    </select>
+
+</mapper>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<!-- namespace：命名空间，保证命名空间唯一 -->
+<mapper namespace="MyMapper">
+
+    <!-- 简单的查询映射-->
+    <select id="selectUser" parameterType="int" resultType="com.mybatis.pojo.User">
+        select * from tb_user where id = #{id}
+    </select>
+
+</mapper>

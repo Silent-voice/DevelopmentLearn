@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- 指定注解扫描路径 -->
+    <context:component-scan base-package="com.mvcLearn" />
+    <!--注册HandlerMapping相关的bean -->
+    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter"/>
+    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping"/>
+
+    <!-- ViewResolver
+        1. 使用InternalResourceViewResolver类创建ViewResolver实例，视图解析类型是Jstl
+        2. 视图文件路径=前缀+视图逻辑名称+后缀
+
+    -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+        <property name="prefix" value="/WEB-INF/jsp/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+
+    <!-- HandlerMapping
+        1. 根据请求的URL调用不同的处理器
+        2. dispathcer-slerlet可以拥有多个HandlerMapping
+        3. 启动注解进行映射声明就不需要在配置文件中写了
+
+
+    <bean id="loginMapping"
+          class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+        <property name="mappings">
+            <props>
+                <prop key="doLogin">loginAction</prop>
+                <prop key="doRegist">registAction</prop>
+                <prop key="toRegist">toRegistAction</prop>
+                <prop key="toLogin">toLoginAction</prop>
+            </props>
+        </property>
+        <property name="order" value="1"/>
+    </bean>
+    -->
+
+</beans>
+
